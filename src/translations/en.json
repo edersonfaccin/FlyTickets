@@ -1,0 +1,6 @@
+{
+    "wellcome": "Wellcome {{name}}",
+    "searchTickets": "Search tickets",
+    "nameIsRequired": "Name is required",
+    "nameMax35": "Max 35 characters"
+}
