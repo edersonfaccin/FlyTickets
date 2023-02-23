@@ -2,5 +2,11 @@
     "wellcome": "Bem-vindo {{name}}",
     "searchTickets": "Encontrar passagens",
     "nameIsRequired": "Nome é obrigatório",
-    "nameMax35": "Máximo 35 caracteres"
+    "nameMax35": "Máximo 35 caracteres",
+    "name": "Insira seu nome",
+    "outbound": "ida",
+    "return": "volta",
+    "limitDateSelected": "Só é permitido selecionar quatro datas",
+    "information": "Informação",
+    "confirm": "Confirmar"
 }

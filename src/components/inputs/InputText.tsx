@@ -34,7 +34,8 @@ const InputText = (props: IInputText) => {
             onChangeText={props.onChange}
             onSubmitEditing={props?.onSubmitEditing}
             style={Default.input}
-            errorMessage={props?.showError ? props?.errorMessage : null}
+            placeholderTextColor={Colors.darkBlue}
+            errorMessage={props?.showError ? props?.errorMessage : ''}
             disabled={props?.disabled}
             errorStyle={Default.containerError}
             rightIcon={(

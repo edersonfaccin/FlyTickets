@@ -2,5 +2,11 @@
     "wellcome": "Wellcome {{name}}",
     "searchTickets": "Search tickets",
     "nameIsRequired": "Name is required",
-    "nameMax35": "Max 35 characters"
+    "nameMax35": "Max 35 characters",
+    "name": "Set your name",
+    "outbound": "outbound",
+    "return": "return",
+    "limitDateSelected": "You are only allowed to select four dates",
+    "information": "Information",
+    "confirm": "Confirm"
 }

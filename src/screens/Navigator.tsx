@@ -15,8 +15,8 @@ const Navigator = (props) => {
             <Stack.Navigator 
                 initialRouteName={'Initial'} 
                 screenOptions={{
-                    headerTintColor: Colors.lightBlue,
-                    headerStyle: { backgroundColor: Colors.darkBlue },
+                    headerTintColor: Colors.darkBlue,
+                    headerStyle: { backgroundColor: Colors.lightBlue },
                     ...TransitionPresets.SlideFromRightIOS
                 }}>
                 <Stack.Screen 

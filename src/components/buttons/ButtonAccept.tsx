@@ -1,21 +1,21 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Button } from 'react-native-elements'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/AntDesign';
 import Colors from '../../styles/Colors';
 
-interface IButtonStart {
+interface IButtonAccept {
     title: string
     onPress: () => void
 }
 
-const ButtonStart = (props: IButtonStart) => {
+const ButtonAccept = (props: IButtonAccept) => {
     
     return (
         <Button
             icon={
                 <Icon
-                    name="airplane-takeoff"
+                    name="check"
                     size={25}
                     color={Colors.background}
                 />
@@ -27,7 +27,7 @@ const ButtonStart = (props: IButtonStart) => {
     )
 }
 
-export default ButtonStart
+export default ButtonAccept
 
 const styles = StyleSheet.create({
     title: {
