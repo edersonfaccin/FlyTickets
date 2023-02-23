@@ -1,0 +1,37 @@
+[{
+    "code": "SBRJ",
+    "name": "SANTOS DUMONT",
+    "city": "RIO DE JANEIRO",
+    "phonetic1": "rio janeiro",
+    "phonetic2": "riu de janeiro",
+    "phonetic3": "rio di janeiro",
+    "phonetic4": "rio di janero",
+    "uf": "RJ"
+}, {
+    "code": "SBFL",
+    "name": "HERCÍLIO LUZ",
+    "city": "FLORIANÓPOLIS",
+    "phonetic1": "florianopolis",
+    "phonetic2": "floripa",
+    "phonetic3": "florianopoles",
+    "phonetic4": "forianopolis",
+    "uf": "SC"
+}, {
+    "code": "SBGR",
+    "name": "GUARULHOS - GOVERNADOR ANDRÉ FRANCO MONTORO",
+    "city": "GUARULHOS",
+    "phonetic1": "guarulhu",
+    "phonetic2": "garulhos",
+    "phonetic3": "guarolho",
+    "phonetic4": "quarulhos",
+    "uf": "SP"
+}, {
+    "code": "SBPA",
+    "name": "SALGADO FILHO",
+    "city": "PORTO ALEGRE",
+    "phonetic1": "portu alegre",
+    "phonetic2": "porto alegri",
+    "phonetic3": "purto alegre",
+    "phonetic4": "purto alegri",
+    "uf": "RS"
+}]

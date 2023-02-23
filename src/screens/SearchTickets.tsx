@@ -1,10 +1,8 @@
 import React from 'react'
-import { ImageBackground, View, StyleSheet, Dimensions, Text } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient'
+import { View, StyleSheet, Text } from 'react-native'
 import { connect } from 'react-redux'
 import InputCalendar from '../components/inputs/InputCalendar'
 import Colors from '../styles/Colors'
-import Default from '../styles/Default'
 import { fontSize, translate } from '../util/Common'
 import { IStore } from '../util/Interfaces'
 
@@ -18,7 +16,6 @@ const SearchTickets = (props) => {
                 <InputCalendar label={translate('outbound')}/>
                 <InputCalendar label={translate('return')}/>
             </View>
-
         </View>
     )
 }

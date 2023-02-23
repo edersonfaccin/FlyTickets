@@ -8,5 +8,6 @@
     "return": "return",
     "limitDateSelected": "You are only allowed to select four dates",
     "information": "Information",
-    "confirm": "Confirm"
+    "confirm": "Confirm",
+    "typeCity": "Type a city"
 }

@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import { View, StyleSheet, Text, Alert, TouchableOpacity } from 'react-native'
-import { Input } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/FontAwesome5'
-import Default from '../../styles/Default'
 import Colors from '../../styles/Colors'
 import { fontSize, mountSelectedDatesObject, translate } from '../../util/Common'
 import Modal from 'react-native-modal';
 import { Calendar } from 'react-native-calendars'
 import { format } from 'date-fns'
 import ButtonAccept from '../buttons/ButtonAccept'
+import InputSearch from './InputSearch'
 
 interface IInputCalendar {
     label: string
@@ -21,7 +20,7 @@ const InputCalendar = (props: IInputCalendar) => {
     const [ dates, setDates ] = useState<Date[]>([])
     const [ showCalendarModal, setShowCalendarModal ] = useState<boolean>(false)
     const [ selectedDates, setSelectedDates ] = useState<any>()
-    const [ loading, setLoading ] = useState<boolean>(false)
+    const [ city, setCity ] = useState<string>()
 
     const onOpenCalendar = () => {
         setShowCalendarModal(true)
@@ -50,34 +49,48 @@ const InputCalendar = (props: IInputCalendar) => {
                 atualDates.splice(idx, 1)
             }
             
-            setLoading(true)
             setDates(atualDates)
             setSelectedDates(mountSelectedDatesObject(atualDates))
-            setLoading(false)
         }
 
         return (
             <Modal
                 onBackdropPress={() => setShowCalendarModal(false)}
-                isVisible={showCalendarModal}
-                style={styles.modal}>
-                <Calendar
-                    style={{ borderRadius: 10 }}
-                    initialDate={format(atualDate, 'yyyy-MM-dd')}
-                    minDate={format(atualDate, 'yyyy-MM-dd')}
-                    onDayPress={dateSelected => {
-                        const { day, month, year } = dateSelected
+                isVisible={showCalendarModal}>
+                <View style={styles.modal}>
+                    <InputSearch value={city} onChange={val => setCity(val)} />
 
-                        onDayPress(day, month-1, year)
-                    }}
-                    monthFormat={'MMMM yyyy'}
-                    firstDay={1}
-                    markingType={'period'}
-                    markedDates={selectedDates}
-                />
-                <ButtonAccept onPress={onSave} title={translate('confirm')}/>
+                    <Calendar
+                        style={{ borderRadius: 10 }}
+                        initialDate={format(atualDate, 'yyyy-MM-dd')}
+                        minDate={format(atualDate, 'yyyy-MM-dd')}
+                        onDayPress={dateSelected => {
+                            const { day, month, year } = dateSelected
+
+                            onDayPress(day, month-1, year)
+                        }}
+                        monthFormat={'MMMM yyyy'}
+                        firstDay={1}
+                        markingType={'period'}
+                        markedDates={selectedDates}
+                    />
+                    <View style={{ paddingVertical: 18 }}>
+                        <ButtonAccept onPress={onSave} title={translate('confirm')}/>
+                    </View>
+                </View>
             </Modal>
         )
+    }
+
+    const renderDateSlot = (position: number) => {
+        if(dates.length > position){
+            let sorted : Date[] = dates.sort((a: Date, b: Date) => a.getTime() - b.getTime())
+            let select: Date = sorted[position]
+
+            return format(select, 'MM/yy')
+        }
+
+        return '--/--'
     }
 
     return (
@@ -92,16 +105,16 @@ const InputCalendar = (props: IInputCalendar) => {
                     />
                 </View>
                 <View style={styles.slotDateItem}>
-                    <Text>1</Text>
+                    <Text style={styles.selectedDate}>{renderDateSlot(0)}</Text>
                 </View>
                 <View style={styles.slotDateItem}>
-                    <Text>2</Text>
+                    <Text style={styles.selectedDate}>{renderDateSlot(1)}</Text>
                 </View>
                 <View style={styles.slotDateItem}>
-                    <Text>3</Text>
+                    <Text style={styles.selectedDate}>{renderDateSlot(2)}</Text>
                 </View>
                 <View style={styles.slotDateItem}>
-                    <Text>4</Text>
+                    <Text style={styles.selectedDate}>{renderDateSlot(3)}</Text>
                 </View>
 
                 { renderModalCalendar() }
@@ -135,11 +148,13 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     modal: {
-        flex: 1,
         marginVertical: 100,
         marginHorizontal: 20,
         borderRadius: 20,
-        justifyContent: 'center',
-        backgroundColor: Colors.lightBlue
+        justifyContent: 'center'
+    },
+    selectedDate: {
+        fontSize: fontSize(-4),
+        fontWeight: '600'
     }
 })

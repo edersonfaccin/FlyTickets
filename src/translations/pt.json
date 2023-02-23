@@ -8,5 +8,6 @@
     "return": "volta",
     "limitDateSelected": "Só é permitido selecionar quatro datas",
     "information": "Informação",
-    "confirm": "Confirmar"
+    "confirm": "Confirmar",
+    "typeCity": "Digite uma cidade"
 }
