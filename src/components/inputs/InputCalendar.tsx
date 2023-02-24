@@ -87,7 +87,7 @@ const InputCalendar = (props: IInputCalendar) => {
             let sorted : Date[] = dates.sort((a: Date, b: Date) => a.getTime() - b.getTime())
             let select: Date = sorted[position]
 
-            return format(select, 'MM/yy')
+            return format(select, 'dd/MM')
         }
 
         return '--/--'
@@ -96,6 +96,7 @@ const InputCalendar = (props: IInputCalendar) => {
     return (
         <TouchableOpacity onPress={onOpenCalendar} style={styles.container}>
             <Text style={styles.label}>{props.label}</Text>
+            <Text style={styles.labelCity}>{city || '---'}</Text>
             <View style={styles.slotDates}>
                 <View style={styles.slotDateItem}>
                     <Icon
@@ -135,6 +136,13 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         fontSize: fontSize(4),
         color: Colors.darkBlue,
+        textAlign: 'center'
+    },
+    labelCity: {
+        textTransform: 'uppercase',
+        fontWeight: '600',
+        fontSize: fontSize(4),
+        color: Colors.lightBlue,
         textAlign: 'center'
     },
     slotDates: {

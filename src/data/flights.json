@@ -1,0 +1,56 @@
+[{
+    "origin": "RIO DE JANEIRO",
+    "destination": "FLORIANÓPOLIS",
+    "flights": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023"
+    }, {
+
+    }, {
+
+    }]
+}, {
+    "origin": "RIO DE JANEIRO",
+    "destination": "GUARULHOS",
+
+}, {
+    "origin": "RIO DE JANEIRO",
+    "destination": "PORTO ALEGRE",
+
+}, {
+    "origin": "FLORIANÓPOLIS",
+    "destination": "RIO DE JANEIRO",
+
+}, {
+    "origin": "FLORIANÓPOLIS",
+    "destination": "GUARULHOS",
+
+}, {
+    "origin": "FLORIANÓPOLIS",
+    "destination": "PORTO ALEGRE",
+
+}, {
+    "origin": "GUARULHOS",
+    "destination": "RIO DE JANEIRO",
+
+}, {
+    "origin": "GUARULHOS",
+    "destination": "FLORIANÓPOLIS",
+
+}, {
+    "origin": "GUARULHOS",
+    "destination": "PORTO ALEGRE",
+
+}, {
+    "origin": "PORTO ALEGRE",
+    "destination": "GUARULHOS",
+
+}, {
+    "origin": "PORTO ALEGRE",
+    "destination": "RIO DE JANEIRO",
+
+}, {
+    "origin": "PORTO ALEGRE",
+    "destination": "FLORIANÓPOLIS",
+
+}]
