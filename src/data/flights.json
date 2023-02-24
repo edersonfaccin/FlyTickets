@@ -1,56 +1,313 @@
 [{
     "origin": "RIO DE JANEIRO",
     "destination": "FLORIANÓPOLIS",
-    "flights": [{
+    "dates": [{
         "start": "24/04/2023",
-        "end": "24/05/2023"
-    }, {
-
-    }, {
-
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
     }]
 }, {
     "origin": "RIO DE JANEIRO",
     "destination": "GUARULHOS",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "RIO DE JANEIRO",
     "destination": "PORTO ALEGRE",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "FLORIANÓPOLIS",
     "destination": "RIO DE JANEIRO",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "FLORIANÓPOLIS",
     "destination": "GUARULHOS",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "FLORIANÓPOLIS",
     "destination": "PORTO ALEGRE",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "GUARULHOS",
     "destination": "RIO DE JANEIRO",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "GUARULHOS",
     "destination": "FLORIANÓPOLIS",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "GUARULHOS",
     "destination": "PORTO ALEGRE",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "PORTO ALEGRE",
     "destination": "GUARULHOS",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "PORTO ALEGRE",
     "destination": "RIO DE JANEIRO",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }, {
     "origin": "PORTO ALEGRE",
     "destination": "FLORIANÓPOLIS",
-
+    "dates": [{
+        "start": "24/04/2023",
+        "end": "24/05/2023",
+        "flights": [{
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "1 conexão",
+            "duration": "1h 50m",
+            "value": "R$ 1900"
+        }, {
+            "start": "24/04/2023 05:30",
+            "end": "24/05/2023 17:30",
+            "connections": "2 conexões",
+            "duration": "2h 50m",
+            "value": "R$ 1600" 
+        }, {
+            "start": "24/04/2023 03:30",
+            "end": "24/05/2023 19:30",
+            "connections": "3 conexões",
+            "duration": "4h 10m",
+            "value": "R$ 950" 
+        }]
+    }]
 }]

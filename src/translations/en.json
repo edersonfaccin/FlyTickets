@@ -9,5 +9,10 @@
     "limitDateSelected": "You are only allowed to select four dates",
     "information": "Information",
     "confirm": "Confirm",
-    "typeCity": "Type a city"
+    "typeCity": "Type a city",
+    "msgNoRecordCityOriginAndDestination": "No records found for origin and destination city",
+    "msgNoDataOriginAndDestination": "No flights found for the selected dates",
+    "originRequired": "Origin city is required",
+    "destinationRequired": "Destination city is required",
+    "conflitDatesOriginAndDestination": "Origin dates must be less than destination dates"
 }

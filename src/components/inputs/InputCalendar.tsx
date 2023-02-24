@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { View, StyleSheet, Text, Alert, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome5'
 import Colors from '../../styles/Colors'
@@ -10,7 +10,9 @@ import ButtonAccept from '../buttons/ButtonAccept'
 import InputSearch from './InputSearch'
 
 interface IInputCalendar {
-    label: string
+    label: string,
+    onSelectedDates: (val: Date[]) => void
+    onSelectedCity: (val: string) => void
 }
 
 const InputCalendar = (props: IInputCalendar) => {
@@ -27,7 +29,7 @@ const InputCalendar = (props: IInputCalendar) => {
     }
 
     const onSave = () => {
-        //TODO
+        props.onSelectedDates(dates)
         setShowCalendarModal(false)
     }
 
@@ -48,7 +50,7 @@ const InputCalendar = (props: IInputCalendar) => {
             }else{
                 atualDates.splice(idx, 1)
             }
-            
+
             setDates(atualDates)
             setSelectedDates(mountSelectedDatesObject(atualDates))
         }
@@ -58,7 +60,13 @@ const InputCalendar = (props: IInputCalendar) => {
                 onBackdropPress={() => setShowCalendarModal(false)}
                 isVisible={showCalendarModal}>
                 <View style={styles.modal}>
-                    <InputSearch value={city} onChange={val => setCity(val)} />
+                    <InputSearch 
+                        value={city} 
+                        onChange={val => {
+                            setCity(val)
+                            props.onSelectedCity(val)
+                        }} 
+                    />
 
                     <Calendar
                         style={{ borderRadius: 10 }}

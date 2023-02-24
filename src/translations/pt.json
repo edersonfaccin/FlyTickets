@@ -9,5 +9,10 @@
     "limitDateSelected": "Só é permitido selecionar quatro datas",
     "information": "Informação",
     "confirm": "Confirmar",
-    "typeCity": "Digite uma cidade"
+    "typeCity": "Digite uma cidade",
+    "msgNoRecordCityOriginAndDestination": "Nenhum registro encontrado para a cidade de origem e destino",
+    "msgNoDataOriginAndDestination": "Nenhum voo encontrado para as datas selecionadas",
+    "originRequired": "Necessário informar a cidade de origem",
+    "destinationRequired": "Necessário informar a cidade de destino",
+    "conflitDatesOriginAndDestination": "As datas de origem devem ser menores que as de destino"
 }

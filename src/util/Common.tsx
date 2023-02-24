@@ -1,7 +1,7 @@
 import memoize from "lodash.memoize"
 import i18n from "i18n-js"
 import { Dimensions } from "react-native"
-import { format } from "date-fns"
+import { format, isBefore } from "date-fns"
 import Colors from "../styles/Colors"
 
 export const translate = memoize((key: any, config?: any) => 
@@ -30,4 +30,18 @@ export const mountSelectedDatesObject = (dates: Date[]) => {
     }
 
     return finalObject;
+}
+
+export const checkDatesConflit = (origin: Date[], destination: Date[]) => {
+    let result: boolean = true
+
+    for (let indexOrigin = 0; indexOrigin < origin.length; indexOrigin++) {
+        for (let indexDestination = 0; indexDestination < destination.length; indexDestination++) {
+            if(isBefore(destination[indexDestination], origin[indexOrigin])) {
+                result = true
+            }      
+        }
+    }
+
+    return result
 }

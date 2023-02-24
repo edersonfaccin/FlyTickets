@@ -3,12 +3,10 @@ import { View, Text, StyleSheet } from 'react-native'
 import Colors from '../../styles/Colors'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { fontSize } from '../../util/Common'
+import { IFlight } from '../../util/Interfaces';
 
-interface IFlyBook {
-    
-}
+const FlyBook = (props: IFlight) => {
 
-const FlyBook = (props: IFlyBook) => {
     return (
         <View style={styles.viewContainer}>
             <View style={styles.viewDates}>
@@ -18,7 +16,7 @@ const FlyBook = (props: IFlyBook) => {
                         size={25}
                         color={Colors.white}
                     />
-                    <Text style={styles.textDates}>23/02 05:30</Text>
+                    <Text style={styles.textDates}>{props.start}</Text>
                 </View>
                 <View style={styles.viewColumn}>
                     <Icon
@@ -26,19 +24,19 @@ const FlyBook = (props: IFlyBook) => {
                         size={25}
                         color={Colors.white}
                     />
-                    <Text style={styles.textDates}>25/02 15:00</Text>
+                    <Text style={styles.textDates}>{props.end}</Text>
                 </View>
             </View>
             <View style={styles.viewDates}>
                 <View style={styles.viewColumn}>
-                    <Text style={styles.textSecondary}>1 conexao</Text>
+                    <Text style={styles.textSecondary}>{props.connections}</Text>
                 </View>
                 <View style={styles.viewColumn}>
-                    <Text style={styles.textSecondary}>duracao 9h 40m</Text>
+                    <Text style={styles.textSecondary}>{props.duration}</Text>
                 </View>
             </View>
             <View style={styles.viewValue}>
-                <Text style={styles.textValue}>R$ 1.630,47</Text>
+                <Text style={styles.textValue}>{props.value}</Text>
             </View>
         </View>
     )
